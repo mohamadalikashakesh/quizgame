@@ -1,4 +1,4 @@
-.body{
+body{
     margin: 0;
     font-family: 'Arial', sans-serif;
     height: 100vh;
@@ -17,7 +17,7 @@
     height: 60%;
 }
 .glass-card{
-    background: rgba(255,255,255, 0);
+    background: rgba(255,255,255,0.08);
     border-radius:20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.6);
     backdrop-filter: blur(12px);
@@ -28,4 +28,85 @@
     max-width: 400px;
     color:white;
     animation: fadeIn 1.5 ease-out;
+}
+.form-container{
+    position: relative;
+}
+form{
+    display: none;
+    flex-direction: column;
+    animation: slideIn 0.5s
+    ease-in-out;
+}
+form.active{
+    display: flex;
+}
+h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #ffff;
+}
+input{
+    background: rgba(255,255,255, 0.2);
+    border:none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+    transition: box-shadow 0.3s
+    ease, background 0.3 ease;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0 0 10px #00d4ff;
+    background: rgba(255,255,255, 0.3);
+}
+input::placeholder{
+    color:rgba(0,0,0,0.6)
+}
+button{
+    background: #00aaff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16;
+    cursor: pointer;
+    transition: background 0.3 ease;
+}
+button:hoover{
+    background: #0088cc;
+}
+.toggle-text{
+    text-align: center;
+    margin-top: 26px;
+    color: rgba(255,255,255, 0.7);
+}
+.toggle-text span{
+    color: #00d4ff;
+    cursor: pointer;
+}
+.toggle-text span:hoover{
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+@keyframes slideIn {
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 0;
+        transform: translateX(0);
+    }
 }
