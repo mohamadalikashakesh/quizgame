@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (email === 'admin@quiz.com' && password === 'admin123') {
                 alert("Welcome Admin!");
-                window.location.href = 'dashboard.html';
+                window.location.href = 'admin-dashboard.html';
                 return;
             }
 
