@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const found = users.find(user => user.email === email && user.password === password);
 
             if (found) {
+                localStorage.setItem('currentUser', JSON.stringify(found));
                 alert(`Welcome back, ${found.username}!`);
                 window.location.href = 'user-dashboard.html';
             } else {
