@@ -1,30 +1,71 @@
 {
     "quizzes": [
         {
-            "title": "Quiz Title",
-            "description": "Quiz Description",
+            "title": "Mathematics Quiz",
+            "description": "A basic math quiz to test your number skills.",
             "questions": [
                 {
-                    "question": "Question text",
-                    "options": ["Option 1", "Option 2", "Option 3", "Option 4"],
+                    "question": "What is 9 × 8?",
+                    "options": ["72", "81", "64", "56"],
                     "correctAnswer": 0
+                },
+                {
+                    "question": "What is the square root of 49?",
+                    "options": ["6", "7", "8", "12"],
+                    "correctAnswer": 1
+                  },
+                {
+                    "question": "What is 15% of 200?",
+                    "options": ["25", "30", "35", "50"],
+                    "correctAnswer": 1
                 }
+
             ]
         },
+
+        {
+            "title": "Geography Quiz",
+            "description": "How well do you know world geography?",
+            "questions": [
+                {
+                    "question": "Which is the largest ocean on Earth?",
+                    "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean"],
+                    "correctAnswer": 2
+                },
+                {
+                    "question": "Which country has the most population?",
+                    "options": ["USA", "India", "China"],
+                    "correctAnswer": 2
+                  },
+                {
+                    "question": "The Great Barrier Reef is located in which country?",
+                    "options": ["Australia", "South Africa", "Brazil"],
+                    "correctAnswer": 0
+                }
+
+            ]
+        },
+
         {
             "title": "General Knowledge",
             "description": "Test your general knowledge with this quiz",
             "questions": [
                 {
-                    "question": "What is the capital of France?",
-                    "options": ["London", "Berlin", "Paris", "Madrid"],
-                    "correctAnswer": 2
+                    "question": "How many continents are there on Earth?",
+                    "options": ["5", "7", "6", "11"],
+                    "correctAnswer": 1
                 },
                 {
                     "question": "Which planet is known as the Red Planet?",
                     "options": ["Venus", "Mars", "Jupiter", "Saturn"],
                     "correctAnswer": 1
+                },
+                {
+                    "question": "Who wrote 'Hamlet'?",
+                    "options": ["Leo Tolstoy", "William Shakespeare", "Mark Twain", "Amr"],
+                    "correctAnswer": 1
                 }
+
             ]
         },
         {
@@ -40,6 +81,11 @@
                     "question": "What is the largest organ in the human body?",
                     "options": ["Heart", "Liver", "Skin", "Brain"],
                     "correctAnswer": 2
+                },
+                {
+                    "question": "What gas do plants absorb from the atmosphere?",
+                    "options": ["Oxygen", "Carbon Dioxide", "Nitrogen"],
+                    "correctAnswer": 1
                 }
             ]
         }
