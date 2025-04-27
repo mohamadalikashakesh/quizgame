@@ -23,4 +23,10 @@ function loadUserData() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', loadUserData);
+document.addEventListener('DOMContentLoaded', () => {
+    loadUserData();
+    
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+        window.location.href = "index.html";
+    });
+});
