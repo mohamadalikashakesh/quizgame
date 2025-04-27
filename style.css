@@ -1,23 +1,25 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: #100f22;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding: 20px 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 90%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
+    min-height: 100vh;
 }
 
 .glass-card {
@@ -513,4 +515,267 @@ button:hover {
     background: #0088cc;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 170, 255, 0.3);
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+        padding: 30px;
+        min-height: auto;
+    }
+
+    .glass-card {
+        padding: 35px;
+    }
+
+    .user-table th, 
+    .user-table td {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    body {
+        padding: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .glass-card {
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    input, button {
+        padding: 10px;
+        font-size: 0.85rem;
+        height: 45px;
+        border-radius: 10px;
+    }
+
+    .form-container {
+        padding: 15px;
+    }
+
+    .user-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0.8rem;
+    }
+
+    .user-table th, 
+    .user-table td {
+        padding: 8px;
+    }
+
+    .quiz-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .quiz-info h3 {
+        font-size: 1rem;
+    }
+
+    .quiz-info p {
+        font-size: 0.8rem;
+    }
+
+    .start-quiz-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    #quiz-title {
+        font-size: 1.4rem;
+    }
+
+    #quiz-description {
+        font-size: 0.85rem;
+    }
+
+    .question {
+        padding: 15px;
+    }
+
+    .question h3 {
+        font-size: 1.1rem;
+    }
+
+    .question p {
+        font-size: 1rem;
+    }
+
+    .option-btn {
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    .results {
+        padding: 20px;
+    }
+
+    .results h2 {
+        font-size: 1.5rem;
+    }
+
+    .results p {
+        font-size: 1rem;
+    }
+
+    .return-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        padding: 25px;
+    }
+
+    .glass-card {
+        padding: 30px;
+    }
+
+    .user-table th, 
+    .user-table td {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+        padding: 20px;
+    }
+
+    .glass-card {
+        padding: 25px;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+
+    input, button {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .user-table th, 
+    .user-table td {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .quiz-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .quiz-info p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 15px;
+    }
+
+    .glass-card {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    input, button {
+        padding: 12px;
+        font-size: 0.9rem;
+        height: 50px;
+    }
+
+    .user-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .quiz-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .start-quiz-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #quiz-title {
+        font-size: 1.6rem;
+    }
+
+    #quiz-description {
+        font-size: 0.9rem;
+    }
+
+    .question {
+        padding: 20px;
+    }
+
+    .option-btn {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .container {
+        padding: 10px;
+    }
+
+    .glass-card {
+        padding: 15px;
+    }
+
+    input, button {
+        padding: 8px;
+        height: 40px;
+    }
+
+    .quiz-item {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .start-quiz-btn {
+        width: auto;
+        margin-top: 0;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 }
